@@ -1,0 +1,18 @@
+﻿/// <reference path="../references.scss" />
+
+
+.popover {
+    background-color: $color-bg-popover;
+    color: $color-font-popover;
+    letter-spacing: normal;
+    line-height: normal;
+    max-width: 276px;
+
+    .beep-popover-body, .beep-popover-title {
+        padding: 0.8rem 1rem;
+    }
+
+}
+
+
+    

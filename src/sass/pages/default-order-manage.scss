@@ -1,0 +1,32 @@
+﻿/// <reference path="../references.scss" />;
+@import "../themes_config/default-config";
+@import "../abstracts/abstracts_import";
+
+.orderitem-component-row.approved {
+    border:1px solid $color-active;
+    opacity:0.7;
+}
+
+
+
+.order-orderitem-manage-section.rejected{
+
+    .btn-orderitem-approve, .btn-orderitem-reject {
+        display: none !important;
+    }
+
+    .rejected-indicator {
+        display: block;
+    }
+
+
+
+}
+
+.rejected-indicator {
+    display: none;
+}
+
+    .order-item-approved-indicator{
+        padding-right:0.5em;
+    }

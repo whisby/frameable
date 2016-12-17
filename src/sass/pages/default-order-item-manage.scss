@@ -1,0 +1,44 @@
+﻿/// <reference path="../references.scss" />;
+@import "../themes_config/default-config";
+@import "../abstracts/abstracts_import";
+
+
+@mixin order-item-indicate($indicator-name, $trigger-class-name){
+        &.order-item-#{$indicator-name}-indicator {
+        .#{$trigger-class-name} & {
+            display: block;
+        }
+    }
+}
+
+.orderitem-component-row.approved {
+    border: 1px solid $color-active;
+}
+
+
+.order-item-status-indicator {
+    display: none;
+
+    @include order-item-indicate(consumed,consumed);
+    @include order-item-indicate(rejected,rejected);
+    @include order-item-indicate(finished,finished);
+
+}
+
+
+.order-orderitem-manage-section.rejected {
+
+    .btn-orderitem-stage, .btn-orderitem-reject {
+        display: none !important;
+    }
+
+    .order-item-rejected-indicator {
+        display: block;
+    }
+}
+
+.rejected-indicator {
+}
+
+.order-item-staged-indicator {
+}

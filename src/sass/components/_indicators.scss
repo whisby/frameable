@@ -1,0 +1,24 @@
+﻿/// <reference path="../references.scss" />
+
+
+/* ACCOUNT INDICATORS */
+
+[class^=accounttype-], [class*=accounttype-],
+[class^=segment-], [class*=segment-] {
+    padding-top: 0.1em;
+    padding-left: 0.8em;
+}
+
+
+@each $k, $v in $colors-account {
+    .accounttype-#{$k} {
+        background-image: linear-gradient(133deg,$v 0.5em, transparent 0.5em);
+    }
+}
+
+@each $k, $v in $colors-segment {
+    .segment-#{$k} {
+        background-image: linear-gradient(133deg,$v 0.5em, transparent 0.5em);
+    }
+}
+

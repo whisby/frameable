@@ -1,0 +1,39 @@
+﻿/// <reference path="../references.scss" />
+
+ul.radio-list {
+    list-style: none;
+    overflow: hidden;
+    margin-top:0;
+    margin-bottom:0;
+
+    &.button-group{
+         > li{
+             padding:0;
+         }
+    }
+
+    > li {
+        float: left;
+        clear: right;
+        position: relative;
+        height: 100%;
+
+        label {
+            height: 100%;
+            display: block;
+            font-size:1em;
+            padding: $padding-form-controls ($padding-form-controls * 1.2);
+            &.selected{
+            }
+        }
+    }
+
+    input[type=radio]{
+        display:none;
+    }
+
+    .inline-radio &, .field-set{
+        margin-top:1em;
+    }
+
+}

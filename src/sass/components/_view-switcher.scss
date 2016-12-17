@@ -1,0 +1,83 @@
+﻿/// <reference path="../references.scss" />
+
+/* VIEW SWITCHER */
+
+$viewswitcher-height: 1.9rem;
+
+#multiContent {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: $viewswitcher-height;
+}
+
+#viewSwitcher {
+    
+    height: $viewswitcher-height;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: map-get($colorset-header, bg);
+
+    li {
+        @include float('left');
+        margin: 0 1rem;
+        height: 100%;
+        list-style: none;
+
+        a {
+            display: block;
+            //padding: 18px 10px 10px 10px; re-evaluate
+            transition: color 0.2s, border-bottom 0.2s;
+            border: 0 solid $color-view-switcher-border;
+            height: 100%;
+            font-size:0.9em;
+            font-family:$font-family-button;
+            color: rgba($color-font-view-switcher, 0.62);
+            text-decoration:none;
+
+            &:visited, &:link{
+                text-decoration:none;
+            }
+
+            &:hover{
+                color: $color-font-view-switcher;
+            }
+
+            &.selected {
+                border-bottom-width: 0.4em;
+                color: $color-font-view-switcher;
+                >span.glyph{
+                    
+                } 
+                
+            }
+
+            @include glyph-block();
+
+      
+        }
+    }
+
+    .glyph {
+    }
+
+    .switcher-text {
+        text-transform: lowercase;
+    }
+}
+
+
+#views {
+    height: 100%;
+    overflow: hidden;
+
+    .view {
+        display: none;
+        height: 100%;
+    }
+}

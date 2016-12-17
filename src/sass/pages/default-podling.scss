@@ -1,0 +1,306 @@
+﻿/// <reference path="../references.scss" />;
+@import "../themes_config/default-config";
+@import "../abstracts/abstracts_import";
+
+
+
+$qualities: ( bad : #8E0000, poor: #f00, normal : #FFF908, fine: #B5FF08, high: #08A2FF, optimal: #08F2FF );
+$bg: map-get($colorset-podling, bg);
+
+
+/*//BASE*/
+
+
+.image-basket-item {
+    text-align: center;
+}
+
+.image-basket-item-container {
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+    min-height: 50px;
+}
+
+.image-basket-item-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+.image-basket-item-text {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    font-size: 40px;
+}
+
+.loading-image-container {
+    max-width: 100%;
+}
+
+
+#previewPODImageContainer {
+    background-color: #000;
+}
+
+.cropper-bg {
+    background-image: none;
+}
+
+
+.cropper-crop {
+    cursor: default;
+}
+
+.pod-faux-bg {
+    opacity: 0.38;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCSVQICAjb4U/gAAAABlBMVEXMzMz////TjRV2AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC");
+}
+
+#podAside {
+    border-right: 1px solid tint($bg, 10%);
+}
+
+.pod-tool-bar {
+    overflow: hidden;
+}
+
+
+.pod-button-group {
+
+    > a {
+        &:hover {
+            background-color: #8AA;
+        }
+
+        > span {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 0.01em;
+        }
+    }
+}
+
+
+
+/*MODAL*/
+
+
+.modal-podling {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    @include color-set($colorset-podling);
+
+    $button-fill: map-get($colorset-podling, button-fill);
+
+    @if val-not-empty($button-fill) {
+        @each $button in $all-button-elements {
+
+            #{$button} {
+                &.on, &:hover {
+                    background-color: tint(map-get($colorset-podling, button-fill), 30%);
+                }
+            }
+        }
+    }
+
+    .pod-button-group {
+
+        > a {
+            padding: $padding-form-controls ($padding-form-controls * 1.2);
+            display: inline-block;
+            border-left: 1px solid #555;
+
+            @if(val-not-empty($button-fill)) {
+                background-color: $button-fill;
+                border-color: shade($button-fill, 20%);
+            }
+
+            color: map-get($colorset-podling, buttongroup-text);
+            padding: 0.5em 1em;
+
+            &:first-child {
+                border-left: none;
+            }
+
+            @include glyph-block();
+
+            &:hover {
+                background-color: #8AA;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+section#podImageControls {
+    /*background-color: #222;*/
+}
+
+/*POD ARRAY*/
+$array-button-color: tint($bg, 4%);
+
+.pod-array-buttons {
+
+
+    > a {
+        display: inline-block;
+        padding: 10px 0;
+        margin: 3px;
+        cursor: default;
+        width: 12.5%;
+        text-align: center;
+        font-size: 11px;
+        background-color: $array-button-color;
+        transition: background-color 0.2s;
+        @include glyph-block();
+
+        :hover {
+            background-color: tint($array-button-color, 10%);
+        }
+    }
+}
+
+
+
+.pod-info-bar {
+}
+
+
+/* QUALITIES */
+
+@each $map, $value in $qualities {
+    $hover: tint($value, 60%);
+    $s: unquote('.quality-')#{$map};
+
+    #{$s} {
+        color: $value;
+
+        a {
+            color: $value;
+        }
+
+        .modal-podling & {
+            color: $value;
+        }
+    }
+
+    a#{$s} {
+        color: $value;
+        transition: color 0.2s;
+
+        &:hover {
+            color: $hover;
+        }
+
+        .modal-podling & {
+            color: $value;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
+}
+
+/* LOADING ITEM */
+
+.loading-item-container {
+}
+
+
+
+.loading-item-image-container {
+    opacity: 0.5;
+}
+
+
+.loading-item-status-container {
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.loading-item-statusbar {
+    height: 0.5em;
+    background-color: $color-active;
+    margin: 0.1em 0;
+    transition: width 0.2s;
+}
+
+.loading-item-statustext {
+}
+
+.loading-item-statustext-progress {
+}
+
+h2.order-item-loading-text {
+    animation: thinking 3s infinite ease-in-out;
+}
+
+@keyframes thinking {
+    0%,100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.order-loading-container {
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+
+.order-loading-image-container {
+    @include float(float);
+    width: 12.5%;
+}
+
+.order-loading-image {
+    max-width: 100%;
+}
+
+
+.order-loading-content-container {
+    @include float(left);
+    width: 87.5%;
+    padding-left: 1.3em;
+}
+
+.order-item-loading-text {
+}
+
+
+#podPropertiesContainer, #podPresetContainer, .pod-review-info {
+    font-size: 0.7em;
+}
+
+
+.pod-review-view {
+
+
+    @media screen and (max-height : 700px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        height: auto !important;
+    }
+}

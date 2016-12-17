@@ -1,0 +1,26 @@
+﻿/// <reference path="../references.scss" />;
+
+$dateinput-offset: 2.125em;
+
+input.date-input{
+    padding-right: $dateinput-offset;
+}
+
+a.date-button {
+    font-size: 1.625em;
+    margin-left: -#{(($dateinput-offset * 1.2) / 2)};
+    display: inline-block;
+    vertical-align: middle;
+    transition: color 0.2s;
+    color:$color-input-inline-button;
+    transition:0.2s;
+    position:relative;
+
+    &:hover{
+        color:$color-input-inline-button-active;
+    }
+
+
+}
+
+

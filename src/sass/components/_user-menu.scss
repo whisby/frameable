@@ -1,0 +1,12 @@
+﻿/// <reference path="../references.scss" />
+
+.user-account-menu, .header-dialog {
+    background: $color-bg-content;
+    border: 1px solid $color-border;
+    box-shadow:0 0 2rem rgba(0,0,0,0.1);
+
+    a{
+        padding:1rem 2rem;
+        display:block;
+    }
+}

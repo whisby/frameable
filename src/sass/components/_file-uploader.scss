@@ -1,0 +1,138 @@
+﻿/// <reference path="../references.scss" />
+
+
+.compact-uploader {
+    text-align: left;
+}
+
+.file-progress-container {
+    position: relative;
+    height: 1rem;
+
+    .file-progress-bar {
+        width: 0;
+        transition: width 0.2s;
+        min-height: 0.25rem;
+        height: inherit;
+    }
+
+    .upload-status-text {
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        color:rgba($color-font-content, 0.8);
+    }
+
+    .file-progress-bar, .upload-status-text{
+        position: absolute;
+        background-color:$color-waiting;
+    }
+
+}
+
+
+
+.file-facade, .file-button {
+    display: inline-block;
+    position: relative;
+    font-size:1em !important;
+    overflow:hidden;
+    padding: $padding-form-controls ($padding-form-controls * 2);
+
+    > input[type=file] {
+        opacity: 0;
+        position: absolute;
+        top: 0.125rem;
+        left: 0.125rem;
+    }
+}
+
+
+.file-hover {
+    outline: 5px dashed $color-bg-status-indicator-selected;
+    box-sizing: border-box;
+    position: relative;
+
+    > * {
+        opacity: 0.2;
+    }
+}
+
+/*FILE ITEMS*/
+
+.file-item-container {
+    overflow: hidden;
+    height: 12rem;
+    width: 12rem;
+    padding: $padding-base;
+    text-align: center;
+    position: relative;
+    border:1px solid $color-border;
+    text-align: center;
+
+    [class*=-indicator] {
+        position: absolute;
+        width: 1.3rem;
+        height: 1.3rem;
+        display: block;
+        color:$color-blend;
+        transition:color 0.2s;
+
+        &:hover{
+            color:$color-actionable;
+        }
+    }
+
+    .lock-indicator {
+        bottom: 0.2rem;
+        right: 0.2rem;
+    }
+
+    .delete-indicator {
+        top: 0.2rem;
+        right: 0.2rem;
+    }
+}
+
+.file-item-icon {
+    height: 9.5rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    a {
+        display: block;
+        height: inherit;
+        width: inherit;
+    }
+
+    i {
+        font-size: 9rem;
+    }
+
+    .extension {
+        position: absolute;
+        top: 3.3rem;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 2.78rem;
+        display: block;
+        z-index: 2;
+        color: #FFF;
+        width: 5.4rem;
+        margin: auto;
+    }
+}
+
+.file-item-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size:0.8em;
+    height: 2.5rem;
+    line-height:1em;
+}

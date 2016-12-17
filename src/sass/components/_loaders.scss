@@ -1,0 +1,33 @@
+﻿/// <reference path="../references.scss" />
+
+
+/* LOADER */
+
+.loader-icon {
+    width: 25%;
+    height: calc(25% * 1) ;
+    margin: auto;
+    animation: loaderRotate 3s infinite linear;
+    fill: $color-waiting;
+}
+
+.loader-overlay {
+    background-color: rgba($color-bg-site, 0.4);
+}
+
+@keyframes loaderRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ASYNC CONTENT */
+
+
+.asyncContent {
+    text-align: center;
+}

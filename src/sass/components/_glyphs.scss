@@ -1,0 +1,11 @@
+﻿/// <reference path="../references.scss" />
+
+
+.glyph-block {
+   @include glyph-block();
+
+   &:visited, &:link{
+       text-decoration:none;
+   }
+
+}

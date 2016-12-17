@@ -1,0 +1,31 @@
+﻿/// <reference path="../references.scss" />
+
+.query-box {
+    background: $color-bg-input-text;
+    position: relative;
+    margin: 0;
+    border:1px solid $color-border-input;
+    line-height:1.5em;
+
+    input {
+        display: inline-block;
+        vertical-align: middle;
+        border: 0;
+        outline: 0;
+        width: 100%;
+        padding-left: 2.5rem;
+        background-color:transparent;
+    }
+
+    .icon {
+        padding: $padding-form-controls;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom:0;
+        line-height:1.5em;
+    }
+
+}
+
+  

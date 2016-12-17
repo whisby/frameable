@@ -1,0 +1,154 @@
+﻿/// <reference path="../references.scss" />
+
+
+
+$matrix-row-height: 3.5em;
+$matrix-row-margin-bottom: 1em;
+$matrix-row-title-height: ($matrix-row-height / 4);
+$matrix-row-content-height: ($matrix-row-height * 0.75);
+
+
+$matrix-arrow-width: 3.6em;
+$matrix-arrow-offset-horizontal: -2.14em;
+$matrix-arrow-offset-vertical: 2.7em;
+$contrast-bg: map-get($colorset-a, bg);
+
+.price-matrix {
+    background-color: transparent;
+
+    @include withDescendantsSelectors('contrast', div) {
+        @include color-set($colorset-a)
+    }
+}
+
+.matrix-nofill, .matrix-inner > div {
+        background-color: transparent;
+    }
+
+    .matrix-title {
+        height: $matrix-row-title-height;
+        line-height: 1.6em;
+        font-family: $font-family-label;
+        font-size: 0.7em;
+    }
+
+    @include allHeaders() {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .matrix-content {
+        height: $matrix-row-content-height;
+        padding: 0.5em 0;
+
+        input{
+            font-size:0.8em;
+        }
+    }
+    //ARROW
+    .matrix-arrow {
+        width: $matrix-row-height;
+        height: $matrix-row-height;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: $matrix-row-height;
+            height: $matrix-row-height;
+            transform: rotate(45deg);
+            top: 0px;
+            background-color: $contrast-bg;
+        }
+
+        &.matrix-arrow-down {
+            width: 100%;
+            height: $matrix-arrow-width;
+            top: 100%;
+
+            :after {
+                width: $matrix-arrow-width;
+                height: $matrix-arrow-width;
+                top: $matrix-arrow-offset-vertical;
+                left: 0px;
+                right: 0;
+                margin: auto;
+            }
+        }
+
+        &.matrix-arrow-left {
+            left: 0;
+
+            &:after {
+                left: $matrix-arrow-offset-horizontal;
+            }
+        }
+
+        &.matrix-arrow-right {
+            right: 0;
+
+            &:after {
+                right: $matrix-arrow-offset-horizontal;
+            }
+        }
+    }
+    //APPENDED ARROWS
+    .matrix-appended-arrow.matrix-arrow.matrix-arrow-left {
+        left: 100%;
+    }
+
+    .matrix-appended-arrow.matrix-arrow.matrix-arrow-right {
+        right: 100%;
+    }
+
+ .matrix-rows {
+
+
+        > div {
+            height: $matrix-row-height;
+            margin-bottom: $matrix-row-margin-bottom;
+            position: relative;
+            background-color: transparent;
+
+            &.contrast {
+                @include withDescendantsSelectors('contrast', div) {
+                    @include color-set($colorset-a)
+                }
+            }
+        }
+    }
+
+.block-tip {
+    width: 100%;
+    height: $matrix-arrow-width;
+    overflow: hidden;
+    position: absolute;
+
+    &:after {
+        content: "";
+        width: $matrix-arrow-width / 2;
+        height: $matrix-arrow-width;
+        position: absolute;
+        transform: rotate(45deg);
+        bottom: $matrix-arrow-offset-vertical;
+    }
+}
+
+.block-tip-contrast {
+    &:after {
+        background-color: $contrast-bg;
+    }
+}
+
+.block-tip-down {
+    bottom: 0;
+}
+
+.block-tip-down:after {
+    margin: auto;
+    //padding-right: 80px;
+}

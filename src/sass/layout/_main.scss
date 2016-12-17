@@ -1,0 +1,50 @@
+﻿/// <reference path="../references.scss" />;
+
+.main {
+    clear: both;
+    padding-top: $header-height-base;
+
+    .dialog & {
+        padding-top: 0;
+    }
+
+}
+
+.main, .main-content {
+    height: 100%;
+
+    .scrollable & {
+        min-height: 100%;
+        height:auto;
+    }
+
+    .dialog & {
+        overflow:auto;
+        }
+}
+
+.main-content {
+    background-color: $color-bg-content;
+    color: $color-font-content;
+
+    article {
+        padding: $padding-comfy;
+    }
+
+
+
+
+
+
+    @include mediaSmall {
+    }
+
+
+    @include mediaMedium {
+  
+    }
+
+
+    @include mediaLarge {
+    }
+}

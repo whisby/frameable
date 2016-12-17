@@ -1,0 +1,10 @@
+/// <reference path="../references.scss" />;
+
+.podling-form {
+
+    #{$all-button-elements} {
+        text-shadow:none;
+        box-shadow:none;
+        
+        }
+}

@@ -1,0 +1,26 @@
+/// <reference path="../references.scss" />;
+
+/* INSTEAD OF USING PANEL  USE  BG +  BORDER-RADIUS */
+
+
+.bg-content {
+    @include color-set($colorset-content)
+}
+
+.bg-header {
+    @include color-set($colorset-header)
+}
+
+
+.bg-footer {
+    @include color-set($colorset-footer)
+}
+
+.bg-alt-content {
+    @include color-set($colorset-a)
+}
+
+
+.bg-alt2-content {
+    @include color-set($colorset-b)
+}

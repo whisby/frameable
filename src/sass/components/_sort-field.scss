@@ -1,0 +1,21 @@
+﻿/// <reference path="../references.scss" />;
+
+/* FOR TABLE SORT FIELDS */
+
+.sort-field {
+    display: block;
+    color: $color-actionable;
+    transition: color 0.2s;
+    &:hover{
+        color: tint($color-actionable, 20%);
+    }
+
+}
+
+.sort-direction-arrow {
+
+
+    display: inline-block;
+    width: 1rem;
+    padding: 0 0.1875rem;
+}

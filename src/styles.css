@@ -1,1 +1,361 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+font: normal 15px 'Roboto', sans-serif;
+font-weight: 500;
+line-height: 135%;
+}
+
+a {
+cursor:pointer;
+color: #0a7b7a;
+}
+
+a:hover  {
+color: #0f9e9c;
+}
+
+
+a img {
+border: 0;
+text-decoration: none;
+}
+
+.row {
+width: 100%;
+clear: both;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.row::after, header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header, main {
+display: block;
+}
+
+header {
+padding: 10px 20px;
+max-width: 1570px;
+box-sizing: border-box;
+}
+
+header h1 {
+float: left;
+}
+
+#login {
+float: right;
+font-size: 0.8em;
+text-align: right;
+padding-top: 40px;
+}
+
+main {
+float: left;
+width: 85%;
+max-width: 1350px;
+min-width: 400px;
+padding: 0 0 40px 0;
+box-sizing: border-box;
+}
+
+strong, bold {
+font-weight: 700;
+}
+
+h1, h2, h3 {
+text-transform: uppercase;
+font-weight: 400;
+line-height: 1em;
+}
+
+h1 {
+font-size: 2.5em;
+}
+
+h2 {
+font-size: 2em;
+}
+
+h3 {
+font-size: 1.7em;
+margin-bottom: 0;
+padding-bottom: 0;
+padding-top: 10px;
+}
+
+.info {
+font-weight: 300;
+text-decoration: none;
+color: #788383;
+display: block;
+}
+
+
+
+nav#cmsMenu {
+width: 15%;
+max-width: 220px;
+min-width: 200px;
+float: left;
+box-sizing: border-box;
+}
+
+
+nav#cmsMenu ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav#cmsMenu ul li {
+margin: 1px 0;
+}
+
+nav#cmsMenu ul li:first-child {
+margin-top: 0;
+}
+
+nav#cmsMenu ul li a {
+display: block;
+padding: 20px 0 20px 20px;
+background: #0a7b7a;
+text-decoration: none;
+color: #fff;
+}
+
+nav#cmsMenu ul li a:hover  {
+background: #0f9e9c;
+}
+
+nav#cmsMenu ul li a:active, a.active {
+background: #0f9e9c !important;
+}
+
+h1#sectionTitle {
+background: #0f9e9c;
+color: #fff;
+padding: 30px 0 30px 5%;
+margin: 0 0 20px 0;
+}
+
+#mainContent {
+padding: 3% 5%;
+width: 90%;
+}
+
+.halfBox {
+width: 47.5%;
+min-width: 400px;
+}
+
+#quickLinks, #messageCenter, .halfBox {
+box-sizing: border-box;
+border: 1px solid #b2b6b6;
+margin: 0 5% 40px 0;
+}
+
+#quickLinks:last-child, #messageCenter:last-child, .halfBox:last-child  {
+margin-right: 0;
+}
+
+#quickLinks {
+width: 35%;
+}
+
+#quickLinks h3, #messageCenter h3, .halfBox h3 {
+padding: 10px 0;
+text-align: center;
+color: #fff;
+background: #788383;
+margin: 0;
+}
+
+#quickLinks ul, .halfBox ul {
+list-style-type: none;
+margin: 0;
+padding: 10px;
+}
+
+#quickLinks li, .halfBox li {
+padding: 5px 0;
+
+}
+
+#quickLinks a, .halfBox a {
+text-decoration: underline;
+}
+
+#messageCenter {
+width: 60%;
+}
+
+#messageCenter p, .halfBox p {
+font-weight: 300;
+font-size: 1.2em;
+padding: 10px 20px;
+}
+
+#messageCenter a {
+text-decoration: underline;
+}
+
+
+a.button {
+border-radius: 4px;
+text-align: center;
+text-decoration: none;
+}
+
+a.important {
+background: #0f9e9c;
+color: #fff;
+padding: 10px 20px;
+}
+
+a.important:hover {
+border: 1px solid #0f9e9c;
+color: #0f9e9c;
+background: #fff;
+}
+
+a.tableView {
+color: #778484;
+padding: 10px;
+display: block;
+font-weight: 500;
+font-size: 0.9em;
+line-height: 140%;
+text-transform: uppercase;
+width: 70%;
+margin: 0 auto;
+}
+
+a.tableView:hover {
+background: #778484;
+color: #fff;
+
+}
+
+table.prettyCMS {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+}
+
+table.prettyCMS, .prettyCMS th, .prettyCMS td {
+text-align: left;
+border: 1px solid #b2b6b6;
+}
+
+.prettyCMS th, .prettyCMS td {
+height: 50px;
+}
+
+.prettyCMS th {
+padding-left: 10px;
+}
+
+td.fourCol, td.fiveCol {
+padding-left: 10px;
+}
+
+td.fourCol {
+width: 30%;
+}
+
+td.fiveCol {
+width: 23%;
+}
+
+table.prettyCMS tr:nth-child(even) {background-color: #f2f2f2}
+
+/* Design Page */
+
+/* Media Queries */
+
+@media (max-width: 1350px) {
+
+nav#cmsMenu {
+display: block;
+width: 100%;
+max-width: 1350px;
+float: none;
+}
+
+nav#cmsMenu::after, main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav#cmsMenu ul li {
+float: left;
+margin-right: 1px;
+margin-top: 0;
+width: 20%;
+}
+
+main {
+display: block;
+float: none;
+width: 100%;
+
+}
+
+header h1 {
+float: none;
+padding: 10px;
+margin: 0;
+}
+
+#login {
+padding: 10px;
+float: none;
+clear: both;
+text-align: left;
+}
+
+
+}
+
+@media (max-width: 768px) {
+
+nav#cmsMenu ul li {
+width: 100%;
+}
+
+.row {
+display: block;
+}
+
+#quickLinks, #messageCenter, .halfBox {
+width: 100%;
+margin-bottom: 20px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

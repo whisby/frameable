@@ -13,12 +13,12 @@ gulp.task('sass:default', function(){
 gulp.src('./src/sass/themes/**.scss')
 .pipe(sourcemaps.init())
 .pipe(sass())
-.pipe(rename('test.css'))
+.pipe(rename('styles.css'))
 .pipe(sourcemaps.write())
 .pipe(gulp.dest('./src'));
 });
 
 
 gulp.task('default', ['sass:default'], function() {
-    gulp.watch('./src/sass/**/.scss', ['sass']);
+    gulp.watch('./src/sass/**/*.scss', ['sass:default']);
 });

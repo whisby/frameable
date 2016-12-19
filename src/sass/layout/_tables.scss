@@ -24,7 +24,7 @@ table.grid {
 
     tr {
 
-        &:nth-child(od) {
+        &:nth-child(odd) {
             td{
                 background-color: $color-row-table;
             }

@@ -24,18 +24,15 @@
     &.bg-alt-content, &.bg-alt2-content {
         @include tool-bar();
     }
-
-
 }
 
 
 /* MODAL */
 
-.modal-title {
+.modal-title {    
+    color:red;
     @include tool-bar();
 }
-
-
 
 /* BGs */
 

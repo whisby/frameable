@@ -1,0 +1,92 @@
+<app-context-nav [NavItems]="NavItems"></app-context-nav>
+
+<section class="main-content">
+  <div class="padding-comfy">
+    <h1>Product </h1>
+
+
+    <div class="sm-flex-center scale-large padding-comfy -padding-roomy text-center">
+      <a href="">
+        <div class="scale-enormous">
+        <i class="material-icons">insert_photo</i>
+        </div>
+        <span>Add Product</span></a>
+      <a href="">
+        <div class="scale-enormous">
+        <i class="material-icons">person_pin</i>
+        </div>
+        <span>Add an Artist</span></a>
+      <a href="">
+        <div class="scale-enormous">
+        <i class="material-icons">group_work</i>
+        </div>
+        <span>Add a Category</span></a>
+      <a href="">
+        <div class="scale-enormous">
+        <i class="material-icons">local_printshop</i>
+        </div>
+        <span>Print Mediums</span></a>
+
+    </div>
+
+    <div headingBox [heading]="'Top Sellers'" class="margin-bottom sm-hidden">
+      <ul>
+        <li>Monet Water Lilies UL345</li>
+        <li>Predictable 8 &times; 10 Black Frame UL334</li>
+        <li>Monster Truck SUNDAY SUNDAY SUNDAY UL995</li>
+      </ul>
+    </div>
+
+    <h2>Recent Orders </h2>
+
+    <table class="grid">
+      <tr>
+        <th>
+        </th>
+        <th>
+          <a>Title</a>
+          <i class="material-icons">keyboard_arrow_down</i>
+        </th>
+        <th><a>Sku</a></th>
+        <th><a>Date Added</a></th>
+      </tr>
+      <tr>
+        <td>
+          <div class="button-group">
+            <a href="">
+              <i class="material-icons" title="edit">mode_edit</i>
+            </a>
+          </div>
+
+        </td>
+        <td>Dogs Playing Poker</td>
+        <td>123456</td>
+        <td>11/4/16</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="button-group">
+            <a href="">
+              <i class="material-icons" title="edit">mode_edit</i>
+            </a>
+          </div>
+        </td>
+        <td>Monster Truck BE THERE!!</td>
+        <td>56789</td>
+        <td>12/12/15</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="button-group">
+            <a href="">
+              <i class="material-icons" title="edit">mode_edit</i>
+            </a>
+          </div>
+        </td>
+        <td>Painter of Light &trade;</td>
+        <td>345609</td>
+        <td>1/2/13</td>
+      </tr>
+    </table>
+  </div>
+</section>

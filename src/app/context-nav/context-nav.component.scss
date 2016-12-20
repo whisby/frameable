@@ -1,0 +1,25 @@
+@import '../../sass/abstracts/_abstracts_import';
+
+.context-nav{
+height:100%;
+width: 13rem;
+    
+
+
+
+
+  a {
+     display:block;
+     padding:$padding-comfy;
+     transition:background-color 0.5s;
+     width:100%;
+     border-bottom:rgba(255,255,255,0.3) 1px solid;
+
+     &:hover{
+        background-color: rgba(255,255,255,0.3);
+     }
+ }
+
+@include color-set($colorset-primary);
+
+}

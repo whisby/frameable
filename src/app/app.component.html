@@ -1,14 +1,20 @@
 <app-header [Title]="Globals.BUSINESS_NAME"></app-header>
-<div id="main" class="main">
-  <div id="content" class="main-content">    
-    <div class="padding-comfy ">
-      <div class="scale-huge">
-Content...
+<section class="main">
+  <div class="main-container">
+    <app-context-nav [NavItems]="NavItems"></app-context-nav>
+    <section class="main-content">
+      <div class="padding-comfy">
+        <h2> Test Content</h2>
+
+        <heading-box [Title]="'Cow Says Moo'">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quam officia id voluptas molestias. Magnam molestias explicabo maiores, error consequatur animi hic molestiae non sapiente. Laboriosam odit, tenetur distinctio in!</p>
+          <p>Cupiditate neque laboriosam quasi earum animi, facilis velit fugit a magnam vero, asperiores, similique. Illum nesciunt minima sint! Saepe mollitia quaerat similique totam ipsa et molestiae reprehenderit sapiente unde minima!</p>
+          <p>Error rem accusantium sapiente maxime harum nam exercitationem architecto eaque consectetur quo. Optio placeat laudantium odio animi molestiae a maxime ut tenetur, nulla repellendus commodi, sit delectus eius? Nulla, mollitia?</p>
+        </heading-box>
+
+
       </div>
 
-
-    </div>
-
-      
+    </section>
   </div>
-</div>
+</section>

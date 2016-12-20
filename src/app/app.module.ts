@@ -7,12 +7,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ContextNavComponent } from './context-nav/context-nav.component';
 import { DashComponent } from './dash/dash.component';
-import { HeadingBoxComponent } from './heading-box/heading-box.component';
+
+import { HeadingBoxDirective } from './heading-box.directive';
 
 @NgModule({
   declarations: [
     AppComponent,    
-    HeaderComponent, ContextNavComponent, DashComponent, HeadingBoxComponent
+    HeaderComponent, ContextNavComponent, DashComponent, HeadingBoxDirective
   ],
   imports: [
     BrowserModule,

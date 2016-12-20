@@ -1,5 +1,8 @@
+@import '../sass/abstracts/_abstracts_import';
 
+.main{
 
-body{
-    color:#f50;
+height:100%;
+padding-top:$header-height-base;
+
 }

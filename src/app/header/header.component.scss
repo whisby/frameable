@@ -1,0 +1,38 @@
+@import '../../sass/abstracts/_abstracts_import';
+
+
+header{
+    height : $header-height-base;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%; 
+    
+
+.header-top, .header-bottom{
+padding:$padding-base $padding-comfy;
+
+}
+
+}
+
+
+.header-nav{
+
+    
+
+a{
+    display:block;
+    padding: $padding-base $padding-comfy;
+
+    &:first-child{
+        padding-left:0;
+    }
+
+    i,span{
+        display:inline-block;
+        vertical-align: middle;
+    }
+}
+
+}

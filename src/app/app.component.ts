@@ -8,5 +8,5 @@ import {SITE } from './app.config';
 })
 export class AppComponent {
   title = 'Test Test';
-  globals = SITE
+  Globals = SITE
 }

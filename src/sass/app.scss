@@ -12,16 +12,15 @@
 
 /* LAYOUT */
 @import "layout/grid";
-@import "layout/header";
 @import "layout/validation";
 @import "layout/modal";
-@import "layout/main";
 @import "layout/panels";
 @import "layout/footer";
 @import "layout/scale-container";
 
 /* COMPONENTS */
 @import "components/tabular";
+@import "components/heading-box";
 @import "components/sort-field";
 @import "components/date-input";
 @import "layout/tables";

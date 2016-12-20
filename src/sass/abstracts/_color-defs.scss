@@ -53,8 +53,8 @@
 
 //theme colors
 $color-brand: #f2664a !default;
-$color-theme-primary: #b0dedd !default;
-$color-alert: #ff59c5 !default;
+$color-theme-primary: #0f9e9c !default;
+$color-alert: #f00 !default;
 $color-error: #ff1111 !default;
 $color-success: #1cdc5b !default;
 $color-pop: $color-alert !default;
@@ -62,8 +62,8 @@ $color-blend: rgba(0,0,0,0.3) !default;
 $color-good: $color-success !default;
 $color-rejected: $color-error !default;
 $color-text: #222 !default;
-$color-navigatable: #ee8b5d !default;
-$color-actionable: #30CDC9 !default;
+$color-navigatable: #0a7b7a !default;
+$color-actionable: #0a7b7a !default;
 $color-actionable-inline: #ccc !default;
 $color-actionable-surface: #e4ecec !default;
 $color-actionable-surface-accent: inverse-value-mix($color-actionable, 10%, 50, true) !default;

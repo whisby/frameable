@@ -29,11 +29,9 @@ $container-width: 1150px !default;
 
 /* HEADER CONFIG */
 
-$header-height-base: 3.7rem;
+$header-height-base: 7.7rem;
 $header-main-height-base: ($header-height-base * 0.6666666667);
-$header-info-height-base: ($header-height-base * 0.3333333337);
-$header-widget-font-base: 2rem;
-
+$header-lower-height-base: ($header-height-base * 0.3333333337);
 
 /* GLYPHS */
 

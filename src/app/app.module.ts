@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { ContextNavComponent } from './context-nav/context-nav.component';
+import { DashComponent } from './dash/dash.component';
+
+import { HeadingBoxDirective } from './heading-box.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,    
+    HeaderComponent, ContextNavComponent, DashComponent, HeadingBoxDirective
   ],
   imports: [
     BrowserModule,

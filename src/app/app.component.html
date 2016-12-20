@@ -1,15 +1,18 @@
-<header>
-  <div class="header-container">
-    <div class="header-identity">
-      <span class=""></span>
-      <span>{{globals.BUSINESS_NAME}}</span>
-      <span>Admin</span>
-    </div>
-    <div class="header-controls"></div>
+<app-header [Title]="Globals.BUSINESS_NAME"></app-header>
+<section class="main">
+  <div class="main-container">
+    <app-context-nav [NavItems]="NavItems"></app-context-nav>
+    <section class="main-content">
+      <div class="padding-comfy">
+        <h2> Test Content</h2>
+
+        <div headingBox [heading]="'test'" >
+meep
+          </div>
+
+
+      </div>
+
+    </section>
   </div>
-</header>
-  <div id="main" class="main">
-        <div id="content" class="main-content">
-          Content
-        </div>
-    </div>
+</section>

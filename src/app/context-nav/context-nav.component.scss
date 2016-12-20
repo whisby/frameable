@@ -1,10 +1,7 @@
 @import '../../sass/abstracts/_abstracts_import';
 
 .context-nav{
-height:100%;
-width: 13rem;
-    
-
+width:100%;
 
 
 
@@ -21,5 +18,12 @@ width: 13rem;
  }
 
 @include color-set($colorset-primary);
+
+
+@include mediaSmall {
+  width: 13rem;
+height:100%;
+
+}
 
 }

@@ -1,18 +1,6 @@
 <app-header [Title]="Globals.BUSINESS_NAME"></app-header>
 <section class="main">
   <div class="main-container">
-    <app-context-nav [NavItems]="NavItems"></app-context-nav>
-    <section class="main-content">
-      <div class="padding-comfy">
-        <h2> Test Content</h2>
-
-        <div headingBox [heading]="'test'" >
-meep
-          </div>
-
-
-      </div>
-
-    </section>
+    <router-outlet> </router-outlet>
   </div>
 </section>

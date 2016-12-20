@@ -203,16 +203,16 @@
 
 @mixin glyph-block($valign: middle) {
 
-    > span {
+    > span, i {
         display: inline;
         vertical-align: $valign;
 
 
-        &[class^=icon]:first-child, &[class*=icon]:first-child {
+        &[class^=icon]:first-child, &[class*=icon]:first-child, &.material-icons:first-child{
             margin-right: $glyph-margin;
         }
 
-        &[class^=icon]:last-child, &[class*=icon]:last-child {
+        &[class^=icon]:last-child, &[class*=icon]:last-child, &.material-icons:first-child{
             margin-left: $glyph-margin;
         }
     }

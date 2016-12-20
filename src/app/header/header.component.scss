@@ -28,11 +28,23 @@ a{
     &:first-child{
         padding-left:0;
     }
-
-    i,span{
-        display:inline-block;
-        vertical-align: middle;
+    span{
+        display:none;
     }
+
+    i{
+        display: block;
+    }
+
+    @include mediaSmall{
+     i,span{    
+         display:inline-block;
+        vertical-align: middle;
+    }   
+    }
+
+
+
 }
 
 }

@@ -1,0 +1,69 @@
+<app-context-nav [NavItems]="NavItems"></app-context-nav>
+
+<section class="main-content">
+  <div class="padding-comfy">
+    <h1>Ordering </h1>
+
+    <div headingBox [heading]="'Updates'" class="margin-bottom">
+      <span class="color-pop">3 </span><span>order(s) ready to ship.</span> <a href="/ordering/list?status=new">view</a>
+    </div>
+
+    <h2>Recent Orders </h2>
+
+    <table class="grid">
+      <tr>
+        <th>
+
+        </th>
+        <th>
+          <a>Date</a>
+          <i class="material-icons">keyboard_arrow_down</i>
+        </th>
+        <th><a>Invoice No</a></th>
+        <th><a>Customer</a></th>
+        <th><a>Status</a></th>
+
+      </tr>
+      <tr>
+        <td>
+          <div class="button-group">
+            <a href="">
+              <i class="material-icons" title="edit">mode_edit</i>
+            </a>
+          </div>
+
+        </td>
+        <td>1/19/17</td>
+        <td>123456</td>
+        <td>Kermit Frog</td>
+        <td>New</td>
+      </tr>
+      <tr>
+        <td>
+             <div class="button-group">
+            <a href="">
+              <i class="material-icons" title="edit">mode_edit</i>
+            </a>
+          </div>
+        </td>
+        <td>1/13/17</td>
+        <td>56789</td>
+        <td>Miss Piggy</td>
+        <td>Imported</td>
+      </tr>
+      <tr>
+        <td>
+             <div class="button-group">
+            <a href="">
+              <i class="material-icons" title="edit">mode_edit</i>
+            </a>
+          </div>
+        </td>
+        <td>1/6/17</td>
+        <td>345609</td>
+        <td>Cookie Monster</td>
+        <td>Processing</td>
+      </tr>
+    </table>
+  </div>
+</section>

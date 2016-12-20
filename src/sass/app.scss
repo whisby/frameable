@@ -11,6 +11,7 @@
 @import "base/helpers";
 
 /* LAYOUT */
+@import "layout/main";
 @import "layout/grid";
 @import "layout/validation";
 @import "layout/modal";
@@ -19,8 +20,8 @@
 @import "layout/scale-container";
 
 /* COMPONENTS */
-@import "components/tabular";
 @import "components/heading-box";
+@import "components/tabular";
 @import "components/sort-field";
 @import "components/date-input";
 @import "layout/tables";

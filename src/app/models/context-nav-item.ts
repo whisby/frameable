@@ -1,13 +1,14 @@
+import {INavigatable} from './inavigatable'
 
-export class ContextNavItem {
+
+export class ContextNavItem implements INavigatable {
     constructor() {
         this.Selected = false;
-
     }
 
+Selected: boolean;
     URL: string;
-    Text: string;
-    Selected: boolean;
+    Text: string;    
     Description: string;
 
 }

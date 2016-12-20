@@ -17,11 +17,7 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "mobile": false,
-<<<<<<< HEAD
       "styles": [
-=======
-      "styles": [        
->>>>>>> b0b1e08953fe49e3c8fca4124d977b97c9e5ef29
       ],
       "scripts": [
       ],

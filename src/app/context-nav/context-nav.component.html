@@ -1,5 +1,5 @@
 <nav *ngIf="NavItems" class="context-nav">
-  <a *ngFor="let item of NavItems" href="{{item.URL}}" title="{{item.Description}}">
+  <a *ngFor="let item of NavItems" routerLink="{{item.URL}}" title="{{item.Description}}">
     <span>{{item.Text}}</span>
   </a>
 </nav>

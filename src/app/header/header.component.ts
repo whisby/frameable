@@ -21,32 +21,32 @@ export class HeaderComponent implements OnInit {
     this.Items = [
       {
         Text: 'Dash',
-        URL: '#',
+        URL: '/dashboard',
         Icon: 'dashboard'
       },
       {
         Text: 'Product',
-        URL: '#',
-        Icon: 'list'
+        URL: '/product',
+        Icon: 'dns'
       },
       {
         Text: 'Framing',
-        URL: '#',
-        Icon: 'settings_brightness'
+        URL: '/framing',
+        Icon: 'crop_free'
       },
       {
         Text: 'Ordering',
-        URL: '#',
+        URL: '/ordering',
         Icon: 'done'
       },
       {
         Text: 'CMS',
-        URL: '#',
+        URL: '/cms',
         Icon: 'description'
       },
       {
         Text: 'Settings',
-        URL: '#',
+        URL: '/settings',
         Icon: 'settings'
       },
 

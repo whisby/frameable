@@ -14,21 +14,6 @@ export class AppComponent {
 
   constructor() {
 
-    this.NavItems = [
-      {
-        URL: '#',
-        Text: 'Item 1',
-        Description: 'Desc 1',
-        Selected : false
-      },
-      {
-        URL: '#',
-        Text: 'Item 2',
-        Description: 'Desc 3',
-        Selected : false
-      }
-    ];
-
   }
 
 

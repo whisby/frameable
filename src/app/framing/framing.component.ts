@@ -9,7 +9,52 @@ import { IPage } from '../models/ipage';
 })
 export class FramingComponent implements OnInit, IPage {
 
-  constructor() { }
+  constructor() {
+
+  let urlbase = '/framing/';
+
+    this.NavItems = [
+
+      {
+        Selected: false,
+        URL: urlbase + 'moulding',
+        Text: 'Moulding',
+        Description: ''
+      },
+      {
+        URL: urlbase + 'matboard',
+        Text: 'Matboard',
+        Description: '',
+        Selected: false
+      },
+      {
+        URL: urlbase + 'glazing',
+        Text: 'Glazing',
+        Description: '',
+        Selected: false
+      },
+      {
+        URL: urlbase + 'mounting',
+        Text: 'Mounting',
+        Description: '',
+        Selected: false
+      },
+      {
+        URL: urlbase + 'fillets',
+        Text: 'Fillets',
+        Description: '',
+        Selected: false
+      },
+      {
+        URL: urlbase + 'liners',
+        Text: 'Liners',
+        Description: '',
+        Selected: false
+      }
+    ]
+
+
+   }
 
   @Input()
   NavItems: ContextNavItem[];

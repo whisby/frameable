@@ -19,7 +19,8 @@ padding:$padding-base $padding-comfy;
 
 .header-nav{
 
-    
+
+
 
 a{
     display:block;
@@ -45,8 +46,29 @@ a{
     }   
     }
 
+}
+}
+
+
+$categories : dashboard,product,framing,ordering,cms,asset,settings;
+
+
+@each $cat in $categories{
+
+.#{$cat}{
+
+.header-nav a.#{$cat}{
+    border-bottom:0.2rem solid #000;
+    color:#000;
+
+}
+
+    
+}
 
 
 }
 
-}
+
+
+

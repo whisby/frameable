@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 
 export interface NavItem {
@@ -11,7 +11,8 @@ export interface NavItem {
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit {
 
@@ -32,17 +33,22 @@ export class HeaderComponent implements OnInit {
       {
         Text: 'Framing',
         URL: '/framing',
-        Icon: 'crop_free'
+        Icon: 'check_box_outline_blank'
       },
       {
         Text: 'Ordering',
         URL: '/ordering',
-        Icon: 'done'
+        Icon: 'assignment_turned_in'
       },
       {
         Text: 'CMS',
         URL: '/cms',
         Icon: 'description'
+      },
+      {
+        Text: 'Assets',
+        URL: '/asset',
+        Icon: 'perm_media'
       },
       {
         Text: 'Settings',

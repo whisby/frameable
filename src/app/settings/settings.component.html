@@ -1,3 +1,58 @@
-<p>
-  settings works!
-</p>
+<app-context-nav [NavItems]="NavItems"></app-context-nav>
+<section class="main-content">
+  <div class="padding-comfy">
+<h1>  Settings</h1>
+
+<div class="flex -md-col-1-2 -margin">
+
+<div headingBox [heading]="'Sales &amp; Promos'" class="margin-bottom">
+        <ul class="bullet-clear">
+          <li><a href="">Manage Coupon Codes</a></li>
+          <li><a href="">Manage Promotions</a></li>
+        </ul>
+      </div>
+
+
+      <div headingBox [heading]="'Email Settings'" class="margin-bottom">
+        <ul class="bullet-clear">
+          <li><a href="">Manage Automated Emails</a></li>
+          <li><a href="">Edit Default Policies &amp; Info</a></li>
+        </ul>
+      </div>
+
+
+</div>
+<div class="flex -md-col-1-2 -margin">
+
+
+<div headingBox [heading]="'Policies'" class="margin-bottom">
+        <ul class="bullet-clear">
+          <li><a href="">Payment Options</a></li>
+          <li><a href="">Return Policies</a></li>
+          <li><a href="">Shipping Policies</a></li>
+          <li><a href="">Shipping Options</a></li>
+          <li><a href="">Tax Options</a></li>
+          
+        </ul>
+      </div>
+
+
+
+      <div headingBox [heading]="'Company'" class="margin-bottom">
+        <ul class="bullet-clear">
+          <li><a href="">Manage Users</a></li>
+          <li><a href="">Contact Info</a></li>
+          <li><a href="">Manage Affiliates</a></li>
+          
+        </ul>
+      </div>
+
+
+</div>
+
+
+
+
+  </div>
+
+</section>

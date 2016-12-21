@@ -12,8 +12,6 @@ export class QuickLinkComponent implements OnInit {
 Title  : string;
 @Input('icon')
 Icon  : string;
-@Input('text')
-Text  : string;
 
   constructor() { }
 

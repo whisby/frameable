@@ -13,7 +13,7 @@
   </div>
   <div class="header-bottom">
     <nav class="header-nav flex">
-      <a *ngFor="let item of Items" href="{{item.URL}}">
+      <a *ngFor="let item of Items" href="{{item.URL}}"  class="{{item.URL.replace('/','')}}">
         <i class="material-icons">{{item.Icon}}</i>
         <span>{{item.Text}}</span>
       </a>

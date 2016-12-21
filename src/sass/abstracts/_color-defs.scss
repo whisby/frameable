@@ -67,7 +67,7 @@ $color-navigatable: #0a7b7a !default;
 $color-actionable: #0a7b7a !default;
 $color-actionable-inline: #ccc !default;
 $color-actionable-surface: #e4ecec !default;
-$color-actionable-surface-accent: inverse-value-mix($color-actionable, 10%, 50, true) !default;
+$color-actionable-surface-accent: $color-theme-primary !default;
 $color-active: #78f6d5 !default;
 $color-intro: #f0b67f !default;
 $color-separator: #aaa !default;

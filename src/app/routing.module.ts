@@ -6,7 +6,9 @@ import { ProductComponent } from './product/product.component';
 import { FramingComponent } from './framing/framing.component';
 import { OrderingComponent } from './ordering/ordering.component';
 import { CmsComponent } from './cms/cms.component';
+import { AssetComponent } from './asset/asset.component';
 import { SettingsComponent } from './settings/settings.component';
+
 
 /* ROUTES */
 const routes: Routes = [
@@ -15,7 +17,9 @@ const routes: Routes = [
   { path: 'product', component: ProductComponent },
   { path: 'framing', component: FramingComponent },
   { path: 'ordering', component: OrderingComponent },
-  { path: 'cms', component: CmsComponent },
+  { path: 'asset', component: AssetComponent },
+  { path: 'cms', redirectTo: 'cms/pages', pathMatch: 'full' },
+  { path: 'cms/pages', component: CmsComponent },
   { path: 'settings', component: SettingsComponent }
 ];
 

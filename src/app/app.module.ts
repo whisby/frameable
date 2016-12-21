@@ -18,6 +18,7 @@ import { FramingComponent } from './framing/framing.component';
 import { CmsComponent } from './cms/cms.component';
 import { SettingsComponent } from './settings/settings.component';
 import { QuickLinkComponent } from './quick-link/quick-link.component';
+import { AssetComponent } from './asset/asset.component';
 
 
 
@@ -25,7 +26,7 @@ import { QuickLinkComponent } from './quick-link/quick-link.component';
 @NgModule({
   declarations: [
     AppComponent,    
-    HeaderComponent, ContextNavComponent, DashComponent, HeadingBoxComponent, DashboardComponent, OrderingComponent, ProductComponent, FramingComponent, CmsComponent, SettingsComponent, QuickLinkComponent
+    HeaderComponent, ContextNavComponent, DashComponent, HeadingBoxComponent, DashboardComponent, OrderingComponent, ProductComponent, FramingComponent, CmsComponent, SettingsComponent, QuickLinkComponent, AssetComponent
   ],
   imports: [
     BrowserModule,

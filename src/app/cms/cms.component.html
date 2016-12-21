@@ -1,3 +1,47 @@
-<p>
-  cms works!
-</p>
+<app-context-nav [NavItems]="NavItems"></app-context-nav>
+<section class="main-content">
+  <div class="padding-comfy">
+
+    <h1>Pages</h1>
+
+    <div class="scale-large text-center padding">
+      <a href="" class="button accent">Create New Page</a>
+    </div>
+
+    <table class="grid">
+
+      <tr>
+        <th></th>
+        <th>
+          <a href="">
+            <span>  Page</span>
+            <i class="material-icons">keyboard_arrow_down</i>
+          </a>
+        </th>
+        <th><a href="">URL</a></th>
+        <th><a href="">Created</a></th>
+      </tr>
+
+      <tr *ngFor="let page of Pages">
+        <td>
+          <div class="button-group">
+            <a href="">
+              <i class="material-icons">mode_edit</i>
+            </a>
+            <a *ngIf="!page.System">
+              <i class="material-icons">delete</i>
+            </a>
+          </div>
+        </td>
+        <td>
+          <sup *ngIf="page.System">
+            (system)
+          </sup>
+          <span>{{page.Name}} </span>
+        </td>
+        <td><a href="{{page.URL}}">{{page.URL}}</a></td>
+        <td>{{page.Created | date:"MM/dd/yy"}}</td>
+      </tr>
+    </table>
+  </div>
+</section>

@@ -12,8 +12,6 @@ export class OrderingComponent implements OnInit, IPage {
   @Input()
   NavItems: ContextNavItem[];
 
-
-
   constructor() {
 
     let urlbase = '/ordering/';
